@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dotted blue;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul,
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/* MAIN */
+main{
+    height: calc(100vh - 90px);
+    display: flex;
+}
+.section_nav{
+    background-color: black;
+    height: 100%;
+    width: 200px;
+}
+.section_main{
+    background-color: #14181F;
+    height: 100%;
+    width: calc(100% - 200px);
+}
+
+/* MAIN */
+
+
+footer{
+    background-color: #242424;
+    height: 90px;
+}
+
