@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    order: 1px dotted blue;
     color: white;
 }
 
@@ -24,42 +23,56 @@ a{
     color: currentColor;
 }
 
+.sidebar,
+.main-content,
+.toolbar{
+    position: fixed;
+}
+
+.sidebar,
+.main-content{
+    height: calc(100vh - 90px);
+}
+
+/* ASIDEBAR */
+.sidebar{
+    background-color: black;
+    width: 230px;
+    left: 0;
+}
+
+
+/* ASIDEBAR */
 
 /* MAIN */
-main{
-    height: calc(100vh - 90px);
-    display: flex;
-}
-.section_aside{
-    background-color: black;
-    height: 100%;
-    width: 200px;
-}
-.section_main{
+
+.main-content{
+    right: 0;
+    top: 0;
+    width: calc(100% - 230px);
     background-color: #14181F;
-    height: 100%;
-    width: calc(100% - 200px);
 }
 @media only screen and (max-width: 582px) {
-    .section_aside{
+    .sidebar{
         width: 80px; 
     }
-    .section_main{
+    .main-content{
         width: calc(100% - 80px);
     }
 }
 
-
-
 /* MAIN */
 
 
 
-/* FOOTER */
-footer{
+/* TOOLBAR */
+.toolbar{
     background-color: #242424;
     height: 90px;
+    width: 100%;
+    bottom: 0;
 }
+
 .row,
 .player_row{
     display: flex;
@@ -160,4 +173,4 @@ figcaption{
 
 
 
-/* FOOTER */
+/* TOOLBAR */
