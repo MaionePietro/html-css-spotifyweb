@@ -74,6 +74,13 @@ a{
 .playlist li{
     margin: 15px 0;
 }
+.playlist_add{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
 
 .instal{
     border-bottom: 1px solid white;
