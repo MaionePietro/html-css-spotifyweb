@@ -7,11 +7,59 @@
     <title>html-css-spotifyweb</title>
     <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script> <!-- PER AGGIUNGERE LE ICONE DI FONTAWESOME-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="sidebar">
-        <img src="./img/logo.svg" alt="">
+
+        <div class="logo">
+            <img class="logo--big" src="./img/logo.svg" alt="">
+            <img class="logo--small" src="./img/logo-small.svg" alt="">
+        </div>
+
+        <div class="library">
+            <ul>
+                <li>
+                    <img src="./img/home.svg" alt="">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <img src="./img/search.svg" alt="">
+                    <a href="">Cerca</a>
+                </li>
+                <li>
+                    <img src="./img/libreria.svg" alt="">
+                    <a href="">La tua libreria</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="playlist">
+            <h4>PLAYLIST</h4>
+
+            <ul>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+                <li><a href="">Nome Playlist</a></li>
+            </ul>
+        </div>
+
+        <div class="instal">
+            <i class="fa-regular fa-circle-down"></i>
+            <a href="">Installa app</a>
+        </div>
+
+        <div class="profile">
+            <img src="./img/profile.svg" alt="" style="background-color: gray; border-radius: 999px; width: 30px;">
+            <h4>John Doe</h4>
+        </div>
+
     </header>
 
     <main class="main-content">
@@ -19,59 +67,58 @@
     </main>
 
     <aside class="toolbar">
-        <section class="row">
-            <div class="col--song">
-                <img src="./img/sinister.jpeg" alt="">
-                <figcaption>
-                    <h5>Sinister</h5>
-                    <p>Brano Nome</p>
-                </figcaption>
-                <div class="add">
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-regular fa-folder"></i></a>
-                </div>
+        
+        <div class="col--song">
+            <img src="./img/sinister.jpeg" alt="">
+            <figcaption>
+                <h5>Sinister</h5>
+                <p>Brano Nome</p>
+            </figcaption>
+            <div class="add">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </div>
+
+        <div class="col--player">
+            <div class="player_row">
+                <ul class="list--player">
+                    <li>
+                        <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="col--player">
-                <div class="player_row">
-                    <ul class="list--player">
-                        <li>
-                            <a href=""><i class="fa-solid fa-shuffle"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-solid fa-backward-step"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-regular fa-circle-play"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-solid fa-forward-step"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="player_row">
-                    <p class="time">0:25</p>           
-                    <div class="track--bar">
-                        <div class="track--line"></div>
-                    </div>                   
-                    <p class="time">4:35</p>        
-                </div>
+            <div class="player_row">
+                <p class="time">0:25</p>           
+                <div class="track--bar">
+                    <div class="track--line"></div>
+                </div>                   
+                <p class="time">4:35</p>        
             </div>
+        </div>
 
-            <div class="col--vol">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-tv"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="bar">
-                    <div class="vol"></div>
-                </div>
-
+        <div class="col--vol">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="bar">
+                <div class="vol"></div>
             </div>
-        </section>
+        </div>
+        
     </aside>
 
 </body>

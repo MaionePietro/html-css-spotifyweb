@@ -39,6 +39,70 @@ a{
     background-color: black;
     width: 230px;
     left: 0;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo--big{
+    width: 130px;
+}
+.sidebar .logo--small{
+    display: none;
+    width: 28px;
+}
+
+.library img{
+    width: 30px;
+    margin-right: 5px;
+}
+.library li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.playlist{
+    flex-grow: 1;
+}
+.playlist li{
+    margin: 15px 0;
+}
+
+.instal{
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 582px) {
+    .sidebar .logo--big{
+        display: none;
+    }
+    .sidebar .logo--small{
+        display: inline;
+    }
+
+    .library a{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .instal a{
+        display: none;
+    }
+
+    .profile h4{
+        display: none;
+    }
 }
 
 
@@ -51,6 +115,7 @@ a{
     top: 0;
     width: calc(100% - 230px);
     background-color: #14181F;
+    overflow-y: auto;
 }
 @media only screen and (max-width: 582px) {
     .sidebar{
@@ -60,7 +125,6 @@ a{
         width: calc(100% - 80px);
     }
 }
-
 /* MAIN */
 
 
@@ -73,14 +137,14 @@ a{
     bottom: 0;
 }
 
-.row,
+.toolbar,
 .player_row{
     display: flex;
 }
-.row{
+.toolbar{
     justify-content: center;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 
@@ -113,9 +177,7 @@ figcaption{
 
 /* col--player */
 .col--player{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-basis: 35%;
 }
 .list--player{
     display: flex;
@@ -135,17 +197,20 @@ figcaption{
 }
 .player_row .time{
     font-size: 12px;
-    margin: 0 27px;
+    margin: 0 15px;
+}
+.col--player .player_row:first-child{
+    margin-bottom: 10px;
 }
 .track--bar{
-    max-width: 427px;
+    width: 100%;
     height: 4px;
     border-radius: 4px;
     background-color: #505050;
 }
 .track--line{
     border-radius: 4px;
-    max-width: 89px;
+    width: 20%;
     height: 4px;
     background-color: white;
 }
