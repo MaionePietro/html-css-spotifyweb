@@ -40,21 +40,25 @@ a{
     width: 230px;
     left: 0;
     overflow: hidden;
-    padding: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .sidebar .logo--big{
     width: 130px;
+    margin-top: 20px
 }
 .sidebar .logo--small{
     display: none;
     width: 28px;
+    
 }
-
+.library{
+    margin-top: 27px;
+}
 .library img{
-    width: 30px;
+    width: 25px;
     margin-right: 5px;
 }
 .library li{
@@ -64,6 +68,7 @@ a{
 }
 
 .playlist{
+    margin-top: 31px;
     flex-grow: 1;
 }
 .playlist li{
