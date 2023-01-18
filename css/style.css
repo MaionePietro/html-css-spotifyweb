@@ -43,7 +43,17 @@ a{
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    color:rgba(255,255,255, 0.3)!important; 
+}
+
+
+.sidebar *:not(.title-playlist,.profile){
+    color:rgba(255,255,255, 0.3);
+}
+.sidebar a:hover{
+    color:rgba(255,255,255, 1);
+}
+.playlist_add:hover{
+    background-color: rgba(255,255,255, 1);
 }
 
 .sidebar .logo--big{
@@ -62,7 +72,7 @@ a{
     width: 25px;
     margin-right: 5px;
 }
-.library li{
+.library a{
     display: flex;
     align-items: center;
     margin: 10px 0;
@@ -76,8 +86,8 @@ a{
     margin: 15px 0;
 }
 .playlist_add{
-    background-color: white;
-    color: black;
+    background-color: rgba(255,255,255, 0.3);
+    color: black !important;
     padding: 10px;
     font-size: 20px;
     margin-right: 10px;
@@ -96,6 +106,10 @@ a{
 @media only screen and (max-width: 582px) {
     .sidebar .logo--big{
         display: none;
+    }
+    .sidebar{
+        align-items: center;
+        padding-left: 0px;
     }
     .sidebar .logo--small{
         display: inline;
