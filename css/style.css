@@ -161,6 +161,28 @@ a{
     padding: 0 10px;
 }
 
+/* album */
+.box-ecently,
+.box-create,
+.box-artist{
+    padding: 20px;
+}
+.title-box{
+    margin: 30px 0;
+}
+.card-box{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.album figure img{
+    width: 177px;
+}
+.card figcaption{
+    text-align: center;
+}
+
+
 
 @media only screen and (max-width: 582px) {
     .sidebar{
