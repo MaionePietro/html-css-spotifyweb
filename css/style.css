@@ -130,6 +130,36 @@ a{
     background-color: #14181F;
     overflow-y: auto;
 }
+
+/* upgrade */
+.upgrade{
+    background-color: #0A0E13;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.bottom-upgrade{
+    font-size: 13px;
+    padding: 10px 41px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+/* typology */
+.typology,
+.typology-list{
+    border: 1px dotted orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.typology-list li{
+    padding: 0 10px;
+}
+
+
 @media only screen and (max-width: 582px) {
     .sidebar{
         width: 80px; 
