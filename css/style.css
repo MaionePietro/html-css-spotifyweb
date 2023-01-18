@@ -149,11 +149,13 @@ a{
 /* typology */
 .typology,
 .typology-list{
-    border: 1px dotted orange;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+.typology-list{
+    padding: 15px 0;
 }
 .typology-list li{
     padding: 0 10px;
