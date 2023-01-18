@@ -52,7 +52,7 @@ a{
 .sidebar a:hover{
     color:rgba(255,255,255, 1);
 }
-.playlist_add:hover{
+.sidebar a:hover .playlist_add{
     background-color: rgba(255,255,255, 1);
 }
 
